@@ -5,14 +5,13 @@ name:                chat-server
 version:             0.1.0.0
 -- synopsis:            
 -- description:         
-license:             BSD3
+license:             MIT
 license-file:        LICENSE
 author:              Bogdan Kolesnyk
 maintainer:          jinnzest
 -- copyright:           
 -- category:            
 build-type:          Simple
-extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
 executable chat-server
