@@ -1,0 +1,24 @@
+name:                aeson-example
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://github.com/jinnzest/aeson-example#readme
+license:             MIT
+license-file:        LICENSE
+author:              Bohdan Kolesnyk
+maintainer:          jinnzest
+copyright:           Copyright: (c) 2016 Bohdan Kolesnyk
+category:            examples
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable aeson-example
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base >=4.9 && <4.10, aeson >=0.11.2.1 && <0.11.2.2, text >= 1.2.2.1 && < 1.2.2.2, bytestring >=0.10.8.1 && <0.10.8.2
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/jinnzest/aeson-example
