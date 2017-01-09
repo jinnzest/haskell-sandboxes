@@ -1,0 +1,36 @@
+name:                tasty-example
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://github.com/jinnzest/tasty-example#readme
+license:             MIT
+license-file:        LICENSE
+author:              Bohdan Kolesnyk
+maintainer:          jinnzest
+copyright:           Copyright: (c) 2016 Bohdan Kolesnyk
+category:            examples
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable tasty-example
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base >=4.9 && <4.10
+  default-language:    Haskell2010
+
+test-suite tasty-example-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , tasty >= 0.7
+                     , tasty-smallcheck >= 0.8
+                     , tasty-quickcheck >= 0.8.4
+                     , tasty-hunit >= 0.9.2
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/jinnzest/tasty-example
