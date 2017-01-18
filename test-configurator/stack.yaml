@@ -1,9 +1,6 @@
-resolver: lts-7.14
+resolver: lts-7.16
 packages:
 - '.'
 extra-deps: []
 flags: {}
 extra-package-dbs: []
-system-ghc: true
-arch: x86_64
-compiler-check: newer-minor

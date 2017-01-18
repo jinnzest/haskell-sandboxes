@@ -12,5 +12,5 @@ cabal-version:       >=1.10
 
 executable endless-job
   main-is:             Main.hs
-  build-depends:       base >=4.9 && <4.10, cron >= 0.4.2 && <0.4.3
+  build-depends:       base, cron
   default-language:    Haskell2010

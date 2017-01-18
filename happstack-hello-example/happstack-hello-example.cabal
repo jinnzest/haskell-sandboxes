@@ -16,9 +16,7 @@ cabal-version:       >=1.10
 executable happstack-hello-example
   main-is:             Main.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
-  build-depends:       base >= 4.7 && < 5,
-                       happstack-server >= 7.4.6.2 && < 7.4.6.3,
-                       mtl >= 2.2.1 && < 2.2.2
+  build-depends:       base, happstack-server, mtl
   default-language:    Haskell2010
 
 source-repository head
