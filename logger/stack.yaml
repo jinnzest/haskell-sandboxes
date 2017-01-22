@@ -1,10 +1,6 @@
-flags: {}
-extra-package-dbs: []
+resolver: lts-7.16
 packages:
 - '.'
-system-ghc: true
-extra-deps:
-- monad-log-0.1.1.0
-compiler-check: newer-minor
-arch: x86_64
-resolver: lts-7.14
+extra-deps: []
+flags: {}
+extra-package-dbs: []
