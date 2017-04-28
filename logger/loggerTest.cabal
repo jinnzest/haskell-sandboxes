@@ -12,5 +12,5 @@ cabal-version:       >=1.10
 
 executable loggerTest
   main-is:             Main.hs
-  build-depends:       base, stylish-haskell, fast-logger, bytestring, iso8601-time, configurator, time
+  build-depends:       base, monad-logger, aeson, time, monad-logger-json
   default-language:    Haskell2010
